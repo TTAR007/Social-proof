@@ -1,0 +1,9 @@
+@use 'variables';
+
+.attribution {
+    font-size: variables.$base-fs;
+    text-align: center;
+    a {
+        color: variables.$Black;
+    }
+}

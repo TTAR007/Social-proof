@@ -1,0 +1,16 @@
+@use 'functions';
+
+// color
+$Very-Dark-Magenta: hsl(300, 43%, 22%);
+$Soft-Pink: hsl(333, 80%, 67%);
+$Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+$Light-Grayish-Magenta: hsl(300, 24%, 96%);
+$White: hsl(0, 0%, 100%);
+$Black: hsl(0, 0%, 0%);
+
+// font and weights
+$base-fs: functions.rem(15);
+
+$w-400: 400;
+$w-500: 500;
+$w-700: 700;
