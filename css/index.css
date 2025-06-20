@@ -9,7 +9,7 @@ body {
   font-family: "League Spartan", sans-serif;
   min-height: 100vh;
   position: relative;
-  background-image: url(/images/bg-pattern-top-mobile.svg), url(/images/bg-pattern-bottom-mobile.svg);
+  background-image: url("/images/bg-pattern-top-mobile.svg"), url("/images/bg-pattern-bottom-mobile.svg");
   background-repeat: no-repeat;
   background-position: top right, bottom left;
 }
@@ -121,7 +121,7 @@ main {
     padding: 5rem 7.5rem;
   }
   body {
-    background-image: url(/images/bg-pattern-top-desktop.svg), url(/images/bg-pattern-bottom-desktop.svg);
+    background-image: url("/images/bg-pattern-top-desktop.svg"), url("/images/bg-pattern-bottom-desktop.svg");
     background-repeat: no-repeat;
     background-position: top left, bottom right;
   }
