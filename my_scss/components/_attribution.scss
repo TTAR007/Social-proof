@@ -1,9 +1,12 @@
 @use 'variables';
 
 .attribution {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
     font-size: variables.$base-fs;
     text-align: center;
     a {
-        color: variables.$Black;
+        color: variables.$Soft-Pink;
     }
 }

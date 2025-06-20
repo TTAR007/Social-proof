@@ -9,7 +9,9 @@ $White: hsl(0, 0%, 100%);
 $Black: hsl(0, 0%, 0%);
 
 // font and weights
-$base-fs: functions.rem(15);
+$large-fs: functions.rem(18);
+$base-fs: functions.rem(16);
+$small-fs: functions.rem(15);
 
 $w-400: 400;
 $w-500: 500;

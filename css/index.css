@@ -1,4 +1,4 @@
-@import url("https://foLents.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Big+Shoulders:opsz,wght@10..72,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Kumbh+Sans:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=ague+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Big+Shoulders:opsz,wght@10..72,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Kumbh+Sans:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Young+Serif&display=swap");
 * {
   box-sizing: border-box;
   padding: 0;
@@ -7,12 +7,187 @@
 
 body {
   font-family: "League Spartan", sans-serif;
+  min-height: 100vh;
+  position: relative;
+  background-image: url(/images/bg-pattern-top-mobile.svg), url(/images/bg-pattern-bottom-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top right, bottom left;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+main {
+  padding: 5rem 2.375rem;
+}
+
+.title_box h1 {
+  color: hsl(300, 43%, 22%);
+  font-size: 2.1875rem;
+  text-align: center;
+  line-height: 85%;
+  margin-block-end: 1rem;
+}
+.title_box p {
+  font-size: 1rem;
+  color: hsl(303, 10%, 53%);
+  font-weight: 500;
+  text-align: center;
+  line-height: 140%;
+}
+
+.stars_box {
+  display: grid;
+  row-gap: 1rem;
+  margin: 2.5rem 0;
+}
+.stars_box section {
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 0.5rem;
+  padding: 0.875rem 0;
+}
+.stars_box p {
+  color: hsl(300, 43%, 22%);
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.stars-row {
+  display: flex;
+  justify-content: center;
+  column-gap: 0.5rem;
+  margin-block-end: 0.75rem;
+}
+.stars-row img {
+  width: max-content;
+  height: max-content;
+}
+
+.person_box {
+  display: grid;
+  row-gap: 1rem;
+}
+.person_box article {
+  background-color: hsl(300, 43%, 22%);
+  color: hsl(0, 0%, 100%);
+  padding: 2rem 1.875rem;
+  border-radius: 0.5rem;
+}
+
+.author-section {
+  display: flex;
+  align-items: center;
+  margin-block-end: 1.5rem;
+}
+.author-section img {
+  max-width: 2.25rem;
+  border-radius: 50%;
+}
+.author-section div {
+  line-height: 120%;
+  padding-inline-start: 1rem;
+}
+
+.author-name {
+  font-weight: 700;
+}
+
+.author-status {
+  color: hsl(333, 80%, 67%);
+}
+
+.author-speech {
+  font-size: 0.9375rem;
+  line-height: 140%;
 }
 
 .attribution {
-  font-size: 0.9375rem;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  font-size: 1rem;
   text-align: center;
 }
 .attribution a {
-  color: hsl(0, 0%, 0%);
+  color: hsl(333, 80%, 67%);
+}
+
+@media (min-width: 37.5rem) {
+  main {
+    padding: 5rem 7.5rem;
+  }
+  body {
+    background-image: url(/images/bg-pattern-top-desktop.svg), url(/images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+  }
+}
+@media (min-width: 62.5rem) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 4rem;
+    max-width: 78.125rem;
+    padding: 5rem 4rem;
+  }
+  .title_box h1 {
+    font-size: 3.5rem;
+    text-align: start;
+    width: 70%;
+    margin-block-end: 1.5rem;
+  }
+  .title_box p {
+    font-size: 1.125rem;
+    text-align: start;
+    width: 80%;
+  }
+  .stars_box {
+    margin: 0;
+    align-content: center;
+    justify-content: end;
+  }
+  .stars_box p {
+    padding-inline-start: 1.25rem;
+    text-align: start;
+  }
+  .stars_box section {
+    display: flex;
+    align-items: center;
+    padding: 1.25rem 2.5rem;
+  }
+  .stars_box section:nth-child(1) {
+    transform: translateX(-6rem);
+  }
+  .stars_box section:nth-child(2) {
+    transform: translateX(-3rem);
+  }
+  .stars-row {
+    margin-block-end: 0;
+  }
+  .person_box {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: 1/3;
+    gap: 2rem;
+  }
+  .person_box article {
+    padding: 2rem 2.4375rem;
+  }
+  .person_box article:nth-child(2) {
+    transform: translateY(1rem);
+  }
+  .person_box article:nth-child(3) {
+    transform: translateY(2rem);
+  }
+  .author-speech {
+    font-size: 1rem;
+  }
 }

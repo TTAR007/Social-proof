@@ -4,5 +4,11 @@
 // base style
 @use 'base';
 
+//main css
+@use 'components/main';
+
 // attribution
 @use 'components/attribution';
+
+//media queries
+@use 'media';
